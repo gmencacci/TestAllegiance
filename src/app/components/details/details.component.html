@@ -1,52 +1,16 @@
-<div class="text-end">
-    <a routerLink="/" class="btn btn-primary">
-          Back
-     </a>
-
-</div>
-
-
-<div class="container overflow-hidden pb-5 pt-3 ">
-    <div class="row gx-5">
-        <div class="col">
-            <div class="p-3 border bg-light">First Name: {{ contact?.firstName }}</div>
-        </div>
-        <div class="col">
-            <div class="p-3 border bg-light">Last Name: {{ contact?.lastName }}</div>
-        </div>
-
+<div class="card">
+    <div class="card-header">
+        Contact Details
     </div>
-</div>
-
-
-<div class="row">
-    <div class="col-sm"></div>
-    <div class="col-sm text-start">
-
-
-        <div>
-            Address Line 1: {{ contact?.addressLine1 }}
-        </div>
-        <div>
-            Address Line 2: {{ contact?.addressLine2 }}
-        </div>
-        <div>
-            City: {{ contact?.city }}
-        </div>
-        <div>
-            State: {{ contact?.state }}
-        </div>
-        <div>
-            Zip Code: {{ contact?.zipCode }}
-        </div>
-        <div>
-            Email: {{ contact?.emailAddress }}
-        </div>
-        <div>
-            Telephone: {{ contact?.telePhoneNumber }}
-        </div>
-
+    <div class="card-body">
+        <h5 class="card-title">{{ contact?.lastName }}, {{ contact?.firstName }}</h5>
+        <div class="card-text"><label class="fw-bold">Address line 1:</label> {{contact?.addressLine1}}</div>
+        <div class="card-text"><label class="fw-bold">Address line 2:</label> {{ contact?.addressLine2 }}</div>
+        <div class="card-text"><label class="fw-bold">City:</label> {{ contact?.city }}</div>
+        <div class="card-text"><label class="fw-bold">State:</label> {{ contact?.state }}</div>
+        <div class="card-text"><label class="fw-bold">Zip Code:</label> {{ contact?.zipCode }}</div>
+        <div class="card-text"><label class="fw-bold">Email:</label> {{ contact?.emailAddress }}</div>
+        <div class="card-text pb-3"><label class="fw-bold">Telephone:</label> {{ contact?.telePhoneNumber }}</div>
+        <a routerLink="/" class="btn btn-primary" class="btn btn-primary">Back</a>
     </div>
-    <div class="col-sm"></div>
-
 </div>
