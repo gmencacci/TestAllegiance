@@ -1,0 +1,22 @@
+<div class="text-center">
+
+    <table class="table">
+        <thead>
+            <th scope="col">First name</th>
+            <th scope="col">Last name</th>
+            <th scope="col">Actions</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let contact of service.contacts">
+                <td>{{contact.firstName}} </td>
+                <td>{{contact.lastName}} </td>
+                <td>
+                    <a class="btn btn-outline-primary" [routerLink]="['/details', contact.id]">
+                        Details
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

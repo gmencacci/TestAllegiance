@@ -1,0 +1,52 @@
+<div class="text-end">
+    <a routerLink="/" class="btn btn-primary">
+          Back
+     </a>
+
+</div>
+
+
+<div class="container overflow-hidden pb-5 pt-3 ">
+    <div class="row gx-5">
+        <div class="col">
+            <div class="p-3 border bg-light">First Name: {{ contact?.firstName }}</div>
+        </div>
+        <div class="col">
+            <div class="p-3 border bg-light">Last Name: {{ contact?.lastName }}</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-sm"></div>
+    <div class="col-sm text-start">
+
+
+        <div>
+            Address Line 1: {{ contact?.addressLine1 }}
+        </div>
+        <div>
+            Address Line 2: {{ contact?.addressLine2 }}
+        </div>
+        <div>
+            City: {{ contact?.city }}
+        </div>
+        <div>
+            State: {{ contact?.state }}
+        </div>
+        <div>
+            Zip Code: {{ contact?.zipCode }}
+        </div>
+        <div>
+            Email: {{ contact?.emailAddress }}
+        </div>
+        <div>
+            Telephone: {{ contact?.telePhoneNumber }}
+        </div>
+
+    </div>
+    <div class="col-sm"></div>
+
+</div>
